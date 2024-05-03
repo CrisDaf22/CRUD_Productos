@@ -1,0 +1,54 @@
+@charset "ISO-8859-1";
+
+html {
+    background-color: #F1ECE7;
+}
+
+#main-content {
+    background-color: #114358;
+    width: 70%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    text-align: left;
+    color: red;
+    font-size: 10px;
+    text-indent: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: none;
+}
+
+/* TITULO Y SUBTITULO DE CONTENIDO */
+.titulo-contenido{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.subtitulo-contenido {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: -15px;
+}
+
+/* BOTONES DE FORMULARIOS */
+.botones-2opc {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+

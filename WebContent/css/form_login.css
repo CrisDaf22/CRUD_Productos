@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+
+#contenedor-login {
+    background-color: #F2AA1F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#tabla-login {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.titulo-login {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subtitulo-login {
+    color: black;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.label-izquierda {
+    text-align: left;
+    text-indent: 25px;
+    font-size: 15px;
+    color: black;
+}
