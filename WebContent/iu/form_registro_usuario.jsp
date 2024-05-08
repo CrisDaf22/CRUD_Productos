@@ -121,5 +121,9 @@
 			<% response.sendRedirect("/SICOI/ProductoControlador"); %>
 		<% } %>
 	</div>
+	
+	<div class="loader-container" id="loaderContainer">
+	  <div class="loader"></div>
+	</div>
 </body>
 </html>

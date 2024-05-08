@@ -8,11 +8,14 @@
 </div>
 
 <div id="datos-usuario">
-    <p id="nombre-usuario">
-    	<% if(usuario.getNombreUsuario() != null) { %>
-    		Usuario: <%= usuario.getNombreUsuario() %>
-    	<% } else { %>
-    		No ha iniciado sesión.
-    	<% } %>
-    </p>
+   	<% if(usuario.getNombreUsuario() != null) { %>
+	   	<button type="button" id="cerrar-sesion">Cerrar sesi&oacute;n</button>
+	   	<p id="nombre-usuario">
+	   		Usuario: <%= usuario.getNombreUsuario() %>
+	   	</p>
+   	<% } else { %>
+	   	<p id="nombre-usuario">
+	   		No ha iniciado sesión.
+	   	</p>
+   	<% } %>
 </div>

@@ -45,6 +45,16 @@
 		</script>	
 	<% } %>
 	
+	<%
+		if(request.getSession().getAttribute("success_message") != null) {
+			String mensaje = (String)request.getSession().getAttribute("success_message");
+			request.getSession().removeAttribute("success_message");
+	%>
+		<script>
+			mostrarMensaje("Éxito", "<%= mensaje %>");
+		</script>
+	<% } %>
+	
 	<!-- Agregando el encabezado de la pagina -->
 	<%@ include file="header.jsp" %>
 	
@@ -98,6 +108,10 @@
 		<% } else { %>
 			<% response.sendRedirect("/CRUD_Productos/ProductoControlador?accion=consultarProductos&idUsuario=" + usuario.getIdUsuario()); %>
 		<% } %>
+	</div>
+	
+	<div class="loader-container" id="loaderContainer">
+	  <div class="loader"></div>
 	</div>
 </body>
 </html>

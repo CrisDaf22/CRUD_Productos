@@ -22,6 +22,14 @@ $(document).ready(function (){
     $("#cerrar-mensaje").on("click", function () {
         $("#popup-mensaje").hide();
     })
+    
+    // Boton de cerrar sesion
+    $("#cerrar-sesion").on("click", function () {
+    	if (confirm("\u00BFSeguro que quieres cerrar sesi\u00F3n?") == true) {
+			$("#loaderContainer").css("display", "flex");
+			window.location.href = "/CRUD_Productos/UsuarioControlador?accion=cerrarSesion";
+		}
+    })
 });
 
 function validar_form_login(usuario, contrasenia) {
@@ -49,6 +57,8 @@ function validar_form_login(usuario, contrasenia) {
 }
 
 function enviar_form_login() {
+	$("#loaderContainer").css("display", "flex");
+
 	$("#formulario-login").submit();
 }
 

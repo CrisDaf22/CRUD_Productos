@@ -112,5 +112,9 @@
 			<% response.sendRedirect("/CRUD_Productos/main.jsp"); %>
 		<% } %>
 	</div>
+	
+	<div class="loader-container" id="loaderContainer">
+	  <div class="loader"></div>
+	</div>
 </body>
 </html>

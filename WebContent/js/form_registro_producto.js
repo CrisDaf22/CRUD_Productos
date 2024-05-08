@@ -3,6 +3,7 @@ $(document).ready(function () {
         var val_form = validar_form_producto();
         
         if(val_form == true) {
+        	$("#loaderContainer").css("display", "flex");
         	enviar_form_producto();
         } else {
         	$("#dialog").remove();

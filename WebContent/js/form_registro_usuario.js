@@ -5,6 +5,7 @@ $(document).ready(function () {
         /* Si es true enviar ajax a servidor */
         if(val_form == true) {
         	console.log("SI ENVIA EL FORM");
+        	$("#loaderContainer").css("display", "flex");
         	enviar_form_usuario();
         }
     })

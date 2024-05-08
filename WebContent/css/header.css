@@ -28,16 +28,26 @@
 }
 
 #datos-usuario {
+	display: flex;
     background-color: #F2AA1F;
     color: black;
     font-weight: bold;
     width: 70%;
-    height: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    height: auto;
+    margin: 5px auto;
+    padding: 2px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#datos-usuario button {
+    margin: 0;
+    margin-left: 5px;
+}
+
+#datos-usuario p {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    margin-right: 5px;
 }
 
 #nombre-usuario {

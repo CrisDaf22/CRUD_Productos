@@ -51,6 +51,14 @@ public class UsuarioControlador extends HttpServlet {
 				response.sendRedirect("/CRUD_Productos/iu/form_registro_usuario.jsp");
 				break;
 			}
+			
+			case "cerrarSesion": {
+				logger.info("CERRANDO SESION");
+				cerrarSesion(request, response);
+				
+				response.sendRedirect("/CRUD_Productos/main.jsp");
+				break;
+			}
 		
 			default: {
 				break;
@@ -121,5 +129,19 @@ public class UsuarioControlador extends HttpServlet {
 			
 			e.printStackTrace();
 		}
+	}
+	
+	public void cerrarSesion(HttpServletRequest request, HttpServletResponse response) {
+		
+		if(!request.getSession().getAttribute("s_usuario").equals("")) {
+			request.getSession().removeAttribute("s_usuario");
+			
+			request.getSession().removeAttribute("success_message");
+			request.getSession().setAttribute("success_message", "Se cerró la sesión correctamente.");
+		} else {
+			request.getSession().removeAttribute("error_message");
+			request.getSession().setAttribute("error_message", "Ocurrió un error al cerrar la sesión.");
+		}
+		
 	}
 }
